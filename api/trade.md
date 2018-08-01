@@ -18,6 +18,8 @@
 |symbol |是  |string | 交易对，如eth_btc （放在请求体内）   |
 |price     |否  |string | 价格 （放在请求体内）   |
 |number     |是  |string | 数量 （放在请求体内）   |
+
+
  **请求示例**
 
 ``` 
