@@ -5,7 +5,7 @@
 - 交易
 
 **请求URL：** 
-- ` https://newcoin.org/v1/order/setOrders?AccessKey=e2xxxxxx-99xxxxxx-84xxxxxx-7xxxx&Timestamp=2017-05-11T15:19:30&Signature=s3sdfae46565 `
+- ` http://www.bitdot.io/submitOrder?AccessKey=e2xxxxxx-99xxxxxx-84xxxxxx-7xxxx&SignatureMethod=HmacSHA256&Timestamp=2017-05-11T15:19:30&Signature=s3sdfae46565 `
   
 **请求方式：**
 - POST 
@@ -14,11 +14,20 @@
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|type |是  |string |卖或者是买，1买2卖   |
-|symbol |是  |string | 交易对，如eth_btc    |
-|price     |否  |string | 价格    |
-|number     |否  |string | 数量    |
+|type |是  |string |卖或者是买，1买2卖（放在请求体内）   |
+|symbol |是  |string | 交易对，如eth_btc （放在请求体内）   |
+|price     |否  |string | 价格 （放在请求体内）   |
+|number     |是  |string | 数量 （放在请求体内）   |
+ **请求示例**
 
+``` 
+  {
+      "symbol":"ns_eth",
+      "price":"0.70",
+      "number":"1",
+      "type":2
+  }
+```
 
  **返回示例**
 
@@ -40,4 +49,4 @@
 
  **备注** 
 
-- 无
+- 
