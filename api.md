@@ -86,5 +86,5 @@ ZjEyMDg5MzYyMjRkZDVhNjQ2YTg3OGYxMjdmOWQxYmY3NDdiNjZhZWVjYjk4YzE0YTU3MWZmZjQ2NmY0
 
 最终，发送到服务器的 API 请求应该为：
 ```
-http://127.0.0.1/api/submitOrder?SignatureMethod=HmacSHA256&Timestamp=2018-07-23+21%3A33%3A49&accessKey=9dd161d4d1ac06656492f8d093768e80&Signature=ZjEyMDg5MzYyMjRkZDVhNjQ2YTg3OGYxMjdmOWQxYmY3NDdiNjZhZWVjYjk4YzE0YTU3MWZmZjQ2NmY0NGVhNw==
+http://www.bitdot.io/api/submitOrder?SignatureMethod=HmacSHA256&Timestamp=2018-07-23+21%3A33%3A49&accessKey=9dd161d4d1ac06656492f8d093768e80&Signature=ZjEyMDg5MzYyMjRkZDVhNjQ2YTg3OGYxMjdmOWQxYmY3NDdiNjZhZWVjYjk4YzE0YTU3MWZmZjQ2NmY0NGVhNw==
 ```
